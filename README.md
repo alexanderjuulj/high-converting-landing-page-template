@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Folder Structure
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+high-converting-landing-page-template/
+│
+├── public/
+│   └── images/
+│       └── Static assets like images and icons
+│
+├── src/
+│   ├── components/
+│   │   ├── layout/
+│   │   │   └── Global layout components
+│   │   │
+│   │   └── sections/
+│   │       └── Landing page specific sections
+│   │
+│   ├── styles/
+│   │   └── base/
+│   │       └── Global SCSS
+│   │
+│   ├── hooks/
+│   │   └── Custom React hooks
+│   │
+│   └── types/
+│       └── TypeScript type definitions
+│
+├── app/
+│   └── Next.js 15+ App Router
+│
+├── next.config.mjs
+├── package.json
+├── LICENSE
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Naming Convention
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### PascalCase
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+PascalCase for type-related and React-specific constructs.
 
-## Learn More
+- React Components
+- TypeScript Interfaces
+- Type Definitions
+- Enum Types
 
-To learn more about Next.js, take a look at the following resources:
+#### React Components Examples
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+// src/components/sections/HeroSection.tsx
+export default function HeroSection() {
+  return <section>Hero Content</section>;
+}
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+#### TypeScript Interfaces Examples
 
-## Deploy on Vercel
+```
+// src/types/Product.ts
+export interface ProductDetails {
+  productId: number;
+  productName: string;
+  price: number;
+}
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### Enum Examples
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+// src/types/Roles.ts
+export enum UserRole {
+  Admin = 'ADMIN',
+  Editor = 'EDITOR',
+  Viewer = 'VIEWER'
+}
+```
+
+### camelCase
+
+camelCase for most variables, functions, and file names.
+
+- File names
+- Function names
+- Variable names
+- Utility functions
+
+#### File Name Examples
+
+```
+// src/utils/userAuthentication.ts
+export const authenticateUser = () => { /* ... */ }
+
+// src/hooks/useUserData.ts
+export function useUserData() { /* ... */ }
+```
+
+#### Variable Name Examples
+
+```
+// Inside a component or function
+const userProfile = { name: 'John Doe', age: 30 };
+let isLoggedIn = false;
+const productList = [];
+
+function processData() {
+  const currentUser = getUserInfo();
+  const totalItems = calculateItemCount();
+}
+```
+
+### kebab-case
+
+kebab-case for CSS module and some file naming scenarios.
+
+- CSS/SCSS module files
+
+#### SCSS Examples
+
+```
+// src/styles/base/_global.scss
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+```
