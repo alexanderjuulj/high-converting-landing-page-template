@@ -1,5 +1,41 @@
 # High Converting Landing Page Template
 
+## Folder Structure
+
+```
+high-converting-landing-page-template/
+│
+├── public/
+│   └── images/
+│       └── Static assets like images and icons
+│
+├── src/
+│   ├── components/
+│   │   ├── layout/
+│   │   │   └── Global layout components
+│   │   │
+│   │   └── sections/
+│   │       └── Landing page specific sections
+│   │
+│   ├── styles/
+│   │   └── base/
+│   │       └── Global SCSS
+│   │
+│   ├── hooks/
+│   │   └── Custom React hooks
+│   │
+│   └── types/
+│       └── TypeScript type definitions
+│
+├── app/
+│   └── Next.js 15+ App Router
+│
+├── next.config.mjs
+├── package.json
+├── LICENSE
+└── README.md
+```
+
 ## Principles and Guidelines
 
 ### Performance
@@ -7,7 +43,7 @@
 Page load times (both real and perceived) are a key consideration for users of all browsers and device types.
 
 - Send fewest bytes possible down the wire
-- Avoid unnecessary use of ` display: none`;
+- Avoid unnecessary use of `display: none`;
 - Keep CSS selectors concise (be wary of SASS nesting)
 - Minimise HTTP requests
 - Minimise blocking – content should be readable before client side processing
@@ -44,42 +80,6 @@ Be verbose with your comments but ensure:
 - They are kept up to date, if you change something that has been commented, ensure you up date the comment as well
 - If code needs extensive commenting, can it be refactored to make it less complex / easier to understand?
 - You focus on why rather than how - unless your code is too complex, it should be self documenting
-
-## Folder Structure
-
-```
-high-converting-landing-page-template/
-│
-├── public/
-│   └── images/
-│       └── Static assets like images and icons
-│
-├── src/
-│   ├── components/
-│   │   ├── layout/
-│   │   │   └── Global layout components
-│   │   │
-│   │   └── sections/
-│   │       └── Landing page specific sections
-│   │
-│   ├── styles/
-│   │   └── base/
-│   │       └── Global SCSS
-│   │
-│   ├── hooks/
-│   │   └── Custom React hooks
-│   │
-│   └── types/
-│       └── TypeScript type definitions
-│
-├── app/
-│   └── Next.js 15+ App Router
-│
-├── next.config.mjs
-├── package.json
-├── LICENSE
-└── README.md
-```
 
 ## Naming Convention
 
