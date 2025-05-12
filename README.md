@@ -14,8 +14,11 @@ high-converting-landing-page-template/
 │   │   ├── layout/
 │   │   │   └── Global layout components
 │   │   │
-│   │   └── sections/
-│   │       └── Landing page specific sections
+│   │   ├── sections/
+│   │   │   └── Landing page specific sections
+│   │   │
+│   │   └── ui/
+│   │       └── UI elements for sections
 │   │
 │   ├── styles/
 │   │   └── base/
