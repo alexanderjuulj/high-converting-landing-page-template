@@ -10,6 +10,8 @@ export { default as FAQAccordion } from "./ui/FAQAccordion/FAQAccordion";
 export { default as FeatureCard } from "./ui/FeatureCard/FeatureCard";
 export { default as TestimonialCard } from "./ui/TestimonialCard/TestimonialCard";
 export { default as USPItem } from "./ui/USPItem/USPItem";
+export { default as HeroActions } from "./ui/HeroActions/HeroActions";
+export { default as HeroImage } from "./ui/HeroImage/HeroImage";
 
 // Sections
 export { default as CTASection } from "./sections/CTASection/CTASection";
