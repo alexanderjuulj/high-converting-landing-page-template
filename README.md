@@ -10,6 +10,9 @@ high-converting-landing-page-template/
 │       └── Static assets like images and icons
 │
 ├── src/
+│   ├── app/
+│   │   └── Next.js 15+ App Router
+│   │
 │   ├── components/
 │   │   ├── layout/
 │   │   │   └── Global layout components
@@ -20,22 +23,25 @@ high-converting-landing-page-template/
 │   │   └── ui/
 │   │       └── UI elements for sections
 │   │
+│   ├── hooks/
+│   │   └── Custom React hooks
+│   │
+│   ├── models/
+│   │   └── Data models, interfaces, types, and schema definitions
+│   │
+│   ├── routes/
+│   │   └── Route utilities, custom route handlers, and navigation helpers
+│   │
 │   ├── styles/
 │   │   └── base/
 │   │       └── Global SCSS
 │   │
-│   ├── hooks/
-│   │   └── Custom React hooks
-│   │
-│   └── types/
-│       └── TypeScript type definitions
-│
-├── app/
-│   └── Next.js 15+ App Router
+│   └── theme/
+│       └── Global config files
 │
 ├── next.config.mjs
 ├── package.json
-├── LICENSE
+├── LICENSE.md
 └── README.md
 ```
 

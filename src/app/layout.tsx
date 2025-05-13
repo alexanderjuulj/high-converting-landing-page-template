@@ -3,6 +3,7 @@ import "@/styles/main.scss";
 import { Box, Flex, Theme } from "@radix-ui/themes";
 import { Footer, Navbar } from "@/components";
 import type { Metadata } from "next";
+import { lightTheme } from "@/theme";
 
 export const metadata: Metadata = {
   title: "High Converting Landing Page",
@@ -18,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Theme>
+        <Theme {...lightTheme}>
           <Box>
             <Flex direction="column" minHeight="100vh">
               <Navbar />
