@@ -23,6 +23,9 @@ high-converting-landing-page-template/
 │   │   └── ui/
 │   │       └── UI elements for sections
 │   │
+│   ├── constants/
+│   │   └── Global reusable constants
+│   │
 │   ├── hooks/
 │   │   └── Custom React hooks
 │   │
