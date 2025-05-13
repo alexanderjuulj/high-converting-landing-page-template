@@ -19,7 +19,12 @@ const PartnerSection: React.FC = () => {
   return (
     <Grid columns={{ initial: "1", lg: "6" }} gap="7" align="center">
       <Box gridColumn={{ initial: "1 / -1", lg: "1 / 3" }}>
-        <Heading as="h2" size="4" weight="medium">
+        <Heading
+          as="h2"
+          size="4"
+          weight="medium"
+          align={{ initial: "center", lg: "left" }}
+        >
           We are proud to have partnered with more than 50+ companies in Europe
         </Heading>
       </Box>
