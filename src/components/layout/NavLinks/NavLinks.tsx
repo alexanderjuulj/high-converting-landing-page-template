@@ -1,9 +1,10 @@
 "use client";
 import React from "react";
-import { Link, Text } from "@radix-ui/themes";
+import { Text } from "@radix-ui/themes";
 import { siteRoutes } from "@/routes/siteRoutes";
 import { Route } from "@/models/Routes";
 import { NavLinksProps } from "./NavLinks.types";
+import Link from "next/link";
 
 /**
  * Renders a list of navigation links based on the `siteRoutes.nav` object.
