@@ -2,3 +2,6 @@
 @use "base/breakpoints";
 @use "base/reset";
 @use "base/global";
+
+// Components
+@use "../components/ui/FeatureCard/featureCard";
