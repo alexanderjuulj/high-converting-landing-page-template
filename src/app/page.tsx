@@ -1,3 +1,28 @@
+import {
+  CTASection,
+  FAQSection,
+  FeaturesSection,
+  HeroSection,
+  PartnerSection,
+  TestimonialsSection,
+  USPSection,
+} from "@/components";
+import { Box, Container, Flex } from "@radix-ui/themes";
+
 export default function Home() {
-  return <div>Test</div>;
+  return (
+    <Box>
+      <Container py={{ initial: "3", lg: "4" }} px={{ initial: "4", lg: "0" }}>
+        <Flex direction="column" gap="6">
+          <HeroSection />
+          <PartnerSection />
+          <FeaturesSection />
+          <USPSection />
+          <TestimonialsSection />
+          <FAQSection />
+          <CTASection />
+        </Flex>
+      </Container>
+    </Box>
+  );
 }
