@@ -1,7 +1,8 @@
 import "@radix-ui/themes/styles.css";
+import "@/styles/main.scss";
 import { Box, Flex, Theme } from "@radix-ui/themes";
-import type { Metadata } from "next";
 import { Footer, Navbar } from "@/components";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "High Converting Landing Page",
