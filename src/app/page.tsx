@@ -18,7 +18,16 @@ export default function Home() {
           <PartnerSection />
           <FeaturesSection />
           <USPSection />
-          <TestimonialsSection />
+        </Flex>
+      </Container>
+
+      {/* Fullwidth Testimonials Section */}
+      <Flex direction="column" py="9">
+        <TestimonialsSection />
+      </Flex>
+
+      <Container py={{ initial: "3", lg: "4" }} px={{ initial: "4", lg: "0" }}>
+        <Flex direction="column" gap="9">
           <FAQSection />
           <CTASection />
         </Flex>
