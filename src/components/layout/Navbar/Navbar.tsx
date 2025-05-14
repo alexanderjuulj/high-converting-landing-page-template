@@ -5,7 +5,7 @@ import { siteRoutes } from "@/routes/siteRoutes";
 import { Nav } from "@/components";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "@/app/favicon.ico";
+import { brand } from "@/theme/brand.config";
 
 /**
  * Navbar component that renders the main navigation bar for the application.
@@ -28,8 +28,13 @@ const Navbar: React.FC = () => {
         <Grid align="center" columns={{ initial: "3", lg: "6" }} gap="4">
           {/* Logo */}
           <Flex gridColumn={{ initial: "1 / 2", lg: "1 / 3" }} gridRow="1">
-            <Link href={siteRoutes.home.path}>
-              <Image src={logo} alt="Logo" width={32} height={32} />
+            <Link href={siteRoutes.home.path} title={brand.company.logo.alt}>
+              <Image
+                src={brand.company.logo.src}
+                alt={brand.company.logo.alt}
+                width={brand.company.logo.width}
+                height={brand.company.logo.height}
+              />
             </Link>
           </Flex>
 

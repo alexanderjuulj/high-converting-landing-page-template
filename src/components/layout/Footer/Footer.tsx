@@ -2,6 +2,7 @@ import { Box, Container, Flex, Text } from "@radix-ui/themes";
 import Link from "next/link";
 import React from "react";
 import { socialLinks } from "@/routes/socialLinks";
+import { brand } from "@/theme/brand.config";
 
 /**
  * Footer component that displays the site copyright and social media links.
@@ -27,7 +28,7 @@ const Footer: React.FC = () => {
           {/* Copyright */}
           <Box>
             <Text size="2" color="gray">
-              &copy; {new Date().getFullYear()} Your Company Name. All rights
+              &copy; {new Date().getFullYear()} {brand.company.name}. All rights
               reserved.
             </Text>
           </Box>
