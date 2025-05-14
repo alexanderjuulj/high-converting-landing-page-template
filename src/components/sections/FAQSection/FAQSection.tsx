@@ -1,3 +1,5 @@
+import FAQAccordion from "@/components/ui/FAQAccordion/FAQAccordion";
+import { faqs } from "@/constants/faqs";
 import { Grid, Flex, Heading, Section, Text, Box } from "@radix-ui/themes";
 import React from "react";
 
@@ -20,7 +22,9 @@ const FAQSection: React.FC = () => {
           </Text>
         </Flex>
         {/* FAQ Items */}
-        <Box gridColumn={{ initial: "1 / -1", lg: "3 / 7" }}>test</Box>
+        <Box gridColumn={{ initial: "1 / -1", lg: "3 / 7" }}>
+          <FAQAccordion faqs={faqs} />
+        </Box>
       </Grid>
     </Section>
   );
