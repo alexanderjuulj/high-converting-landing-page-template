@@ -4,7 +4,7 @@ import React from "react";
 
 const FeaturesSection: React.FC = () => {
   return (
-    <Section size="3">
+    <Section size={{ initial: "2", lg: "3" }}>
       <Box>
         {/* Heading */}
         <Flex direction="column" gap="2" align="center" pb="4">

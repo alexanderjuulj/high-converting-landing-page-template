@@ -5,7 +5,7 @@ import React from "react";
 
 const FAQSection: React.FC = () => {
   return (
-    <Section size="3">
+    <Section size={{ initial: "2", lg: "3" }}>
       <Grid columns={{ initial: "1", lg: "6" }} gap={{ initial: "4", lg: "9" }}>
         {/* Heading */}
         <Flex

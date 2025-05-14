@@ -11,7 +11,7 @@ import React from "react";
 
 const TestimonialsSection: React.FC = () => {
   return (
-    <Section size="3">
+    <Section size={{ initial: "2", lg: "3" }}>
       <Flex direction="column" gap="5">
         {/* Heading */}
         <Container px={{ initial: "4", lg: "0" }}>

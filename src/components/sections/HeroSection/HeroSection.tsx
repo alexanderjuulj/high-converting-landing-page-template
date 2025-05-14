@@ -14,7 +14,7 @@ import React from "react";
 
 const HeroSection: React.FC = () => {
   return (
-    <Section size="3">
+    <Section size={{ initial: "2", lg: "3" }}>
       <Box>
         <Grid columns={{ initial: "1", lg: "6" }} gap="9" align="center">
           <Box gridColumn={{ initial: "1 / -1", lg: "1 / 5" }}>
