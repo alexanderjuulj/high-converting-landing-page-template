@@ -5,10 +5,10 @@ import React from "react";
 
 const USPSection: React.FC = () => {
   return (
-    <Section size="1">
+    <Section size="3">
       <Flex gap="6" direction="column">
         {/* Heading */}
-        <Flex direction="column" gap="2" align="center" pt="9" pb="4">
+        <Flex direction="column" gap="2" align="center" pb="4">
           <Heading as="h2" size="8" align="center" m="0">
             Why Choose Us Section
           </Heading>

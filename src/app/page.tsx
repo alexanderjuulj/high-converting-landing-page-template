@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <Box>
       <Container py={{ initial: "3", lg: "4" }} px={{ initial: "4", lg: "0" }}>
-        <Flex direction="column" gap="6">
+        <Flex direction="column" gap="9">
           <HeroSection />
           <PartnerSection />
           <FeaturesSection />
