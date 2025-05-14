@@ -1,29 +1,42 @@
 "use client";
-import { AspectRatio, Box, Grid, Heading, Text } from "@radix-ui/themes";
+import { AspectRatio, Box, Flex, Grid, Heading, Text } from "@radix-ui/themes";
 import React from "react";
 import Image from "next/image";
 import { FeatureCardProps } from "./FeatureCard.types";
 
-const FeatureCard: React.FC<FeatureCardProps> = ({ size }) => {
+const FeatureCard: React.FC<FeatureCardProps> = ({
+  size,
+  heading,
+  description,
+  image,
+}) => {
   const isLarge = size === "large";
 
   return (
     <Box className="feature-card">
-      <Grid columns={{ initial: "1", lg: "6" }} gap="4">
+      <Grid
+        columns={{ initial: "1", lg: "6" }}
+        gap="4"
+        justify="between"
+        minHeight="100%"
+      >
         <Box
-          gridColumn={{ initial: "1 / -1", lg: "1 / 5" }}
+          gridColumn={
+            isLarge ? { initial: "1 / -1", lg: "1 / 5" } : { initial: "1 / -1" }
+          }
           gridRow={isLarge ? "1" : "1"}
           py="3"
         >
-          <Heading as="h3" size="7" weight="bold">
-            Quick start
-          </Heading>
-          <Text as="p" color="gray" size="3">
-            Get started with Radix UI and Tailwind CSS in just a few minutes.
-            This template provides a solid foundation for your next project.
-          </Text>
+          <Flex direction="column" gap="2">
+            <Heading as="h3" size="7" weight="bold">
+              {heading}
+            </Heading>
+            <Text as="p" color="gray" size="3">
+              {description}
+            </Text>
+          </Flex>
         </Box>
-        <Box
+        <Flex
           gridColumn={
             isLarge
               ? { initial: "1 / -1", lg: "5 / 7" }
@@ -33,8 +46,8 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ size }) => {
         >
           <AspectRatio ratio={isLarge ? 4 / 5 : 4 / 3}>
             <Image
-              src="/static/images/photo-1479030160180-b1860951d696.jpeg"
-              alt="Hero image"
+              src={image}
+              alt={heading}
               fill
               quality={50}
               style={{
@@ -43,7 +56,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ size }) => {
               }}
             />
           </AspectRatio>
-        </Box>
+        </Flex>
       </Grid>
     </Box>
   );

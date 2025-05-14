@@ -18,14 +18,27 @@ const FeaturesSection: React.FC = () => {
 
       {/* Feature Cards */}
       <Flex gap="4" direction="column">
-        <FeatureCard size="large" />
+        <FeatureCard
+          size="large"
+          heading="Highlighted Feature 1"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis, nunc nec pulvinar consequat, erat lectus porta nisi, sed pellentesque ligula nunc in dolor.  Pellentesque maximus augue in odio placerat, non auctor massa aliquam."
+          image="/static/images/photo-1479030160180-b1860951d696.jpeg"
+        />
 
         <Grid columns={{ initial: "1", lg: "2" }} gap="4">
           <Box gridColumn={{ initial: "1 / -1", lg: "1 / 2" }}>
-            <FeatureCard />
+            <FeatureCard
+              heading="Highlighted Feature 2"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis, nunc nec pulvinar consequat, erat lectus porta nisi."
+              image="/static/images/photo-1479030160180-b1860951d696.jpeg"
+            />
           </Box>
           <Box gridColumn={{ initial: "1 / -1", lg: "2 / 3" }}>
-            <FeatureCard />
+            <FeatureCard
+              heading="Highlighted Feature 3"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis, nunc nec pulvinar consequat, erat lectus porta nisi."
+              image="/static/images/photo-1479030160180-b1860951d696.jpeg"
+            />
           </Box>
         </Grid>
       </Flex>
